@@ -843,6 +843,7 @@
 #define MASK_BSETPI  0x707f
 
 
+
 #endif
 #ifdef DECLARE_INSN
 DECLARE_INSN(slli_rv32, MATCH_SLLI_RV32, MASK_SLLI_RV32)

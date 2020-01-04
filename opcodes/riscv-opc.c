@@ -778,6 +778,14 @@ const struct riscv_opcode riscv_opcodes[] =
 {"sfence.vma", 0, {"I", 0},   "s,t",  MATCH_SFENCE_VMA, MASK_SFENCE_VMA, match_opcode, 0 },
 {"wfi",        0, {"I", 0},   "",     MATCH_WFI, MASK_WFI, match_opcode, 0 },
 
+/* RISCV-S EXTENSION  PKU-MPRC*/
+{"oincp",         0, {"I", 0},   "d,s,t",   MATCH_OINCP, MASK_OINCP, match_opcode, 0 },
+{"odecp",         0, {"I", 0},   "d,s,t",   MATCH_ODECP, MASK_ODECP, match_opcode, 0 },
+{"bsetp",         0, {"I", 0},   "d,s,t",   MATCH_BSETP, MASK_BSETP, match_opcode, 0 },
+{"oincpi",        0, {"I", 0},   "d,s,j",  MATCH_OINCPI, MASK_OINCPI, match_opcode, 0 },
+{"bsetpi",        0, {"I", 0},   "d,s,j",  MATCH_BSETPI, MASK_BSETPI, match_opcode, 0 },
+
+
 /* Terminate the list.  */
 {0, 0, {0}, 0, 0, 0, 0, 0}
 };
